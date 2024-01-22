@@ -1,0 +1,30 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+/* Project Colors  */
+:root {
+  --theme-color: #561c24;
+  --heading-color: #6d2932;
+  --paragraph-color: #e8d8c4;
+  --optional-color: #c7b7a3;
+}
+
+/* Applied  */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.themeClr{
+    color: var(--theme-color);
+}
+
+.headClr{
+    color: var(--heading-color);
+}
+
+.paraClr{
+    color: var(--paragraph-color);
+}
+
+.optionClr{
+    color: var(--optional-color);
+}
