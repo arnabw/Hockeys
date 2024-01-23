@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hockey's</title>
     <link rel="icon" href="./assets/images/hockey.png" type="png/icon" />
-    <!-- Flowbite  -->
+    <!-- DaisyUI  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css" />
+    <!-- FlowbiteUI  -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css"
       rel="stylesheet" />
@@ -129,7 +134,7 @@
           <div
             id="default-carousel"
             class="relative w-full z-10"
-            data-carousel="static">
+            data-carousel="slide">
             <!-- Carousel wrapper -->
             <div
               class="relative h-[200px] overflow-hidden rounded-xl md:h-96 lg:h-[550px]">
@@ -165,7 +170,9 @@
                     Unveiling Field Legends
                   </h2>
                   <p class="text-sm lg:text-base text-headClr font-medium">
-                    Uncover the stories of exceptional players and coaches, true legends whose unwavering dedication defines the essence of the game.
+                    Uncover the stories of exceptional players and coaches, true
+                    legends whose unwavering dedication defines the essence of
+                    the game.
                   </p>
                 </div>
               </div>
@@ -182,7 +189,9 @@
                     Champions Behind the Scenes
                   </h2>
                   <p class="text-sm lg:text-base text-paraClr font-bold">
-                    Dive into the narratives of those often overlooked – the players and coaches whose relentless passion shapes the soul of the sport.
+                    Dive into the narratives of those often overlooked – the
+                    players and coaches whose relentless passion shapes the soul
+                    of the sport.
                   </p>
                 </div>
               </div>
@@ -199,7 +208,9 @@
                     Field Icons: Stories Untold
                   </h2>
                   <p class="text-sm lg:text-base text-headClr font-bold">
-                    Delve into the untold stories of players and coaches who stand as icons, channeling their passion to elevate the spirit of the game.
+                    Delve into the untold stories of players and coaches who
+                    stand as icons, channeling their passion to elevate the
+                    spirit of the game.
                   </p>
                 </div>
               </div>
@@ -216,7 +227,9 @@
                     Beyond the Scoreboard: Meet the Game-Changers
                   </h2>
                   <p class="text-sm lg:text-base text-headClr font-bold">
-                    Explore the journeys of game-changers on and off the field, discovering the players and coaches whose impact transcends mere statistics.
+                    Explore the journeys of game-changers on and off the field,
+                    discovering the players and coaches whose impact transcends
+                    mere statistics.
                   </p>
                 </div>
               </div>
@@ -244,8 +257,7 @@
             </button>
           </div>
           <!-- Highlighted Div  -->
-          <div
-            class="bg-headClr lg:hidden space-y-1 p-3  rounded-xl">
+          <div class="bg-headClr lg:hidden space-y-1 p-3 rounded-xl">
             <h2 class="text-lg lg:text-2xl text-optClr font-bold">
               Meet all the heroes from the field
             </h2>
@@ -259,14 +271,108 @@
       </div>
     </header>
 
+    <!-- Main Section  -->
     <main class="container mx-auto">
-      <div class="px-[20px] lg:px-[135px]"></div>
+      <div class="px-[20px] lg:px-[135px]">
+        <!-- Professional Hockey Club Section  -->
+        <div class="flex flex-col justify-center items-center mt-14 lg:mt-32">
+          <div
+            class="flex flex-col justify-center items-center text-center space-x-3 lg:space-y-6 py-6 lg:py-8 border-y-2 border-dashed w-full">
+            <h1 class="text-[22px] lg:text-4xl text-headClr font-extrabold">
+              Professional Hockeys Club
+            </h1>
+            <p
+              class="text-sm lg:text-base text-paraclr font-medium w-[292px] lg:w-[607px]">
+              Embark on the journey of the Professional Hockey Club, where
+              excellence in the sport is celebrated by dedicated players,
+              coaches, and fans alike.
+            </p>
+          </div>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-between w-full mt-12 gap-6">
+            <div class="flex flex-col justify-center items-center">
+              <div
+                class="radial-progress text-red-500"
+                style="--value: 87; --size: 10rem; --thickness: 0.8rem"
+                role="progressbar">
+                <p class="text-headClr text-2xl font-extrabold">87%</p>
+              </div>
+              <div class="mt-4 text-center space-y-3">
+                <h4 class="text-xl font-semibold text-headClr">
+                  Prayer Facility
+                </h4>
+                <p class="w-60 text-paraClr">
+                  Discover solace in our Prayer Facility, a serene space where
+                  one can seek tranquility and connection through moments of
+                  reflection and prayer.
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+              <div
+                class="radial-progress text-green-500"
+                style="--value: 95; --size: 10rem; --thickness: 0.8rem"
+                role="progressbar">
+                <p class="text-headClr text-2xl font-extrabold">95%</p>
+              </div>
+              <div class="mt-4 text-center space-y-3">
+                <h4 class="text-xl font-semibold text-headClr">
+                  Experienced Coach
+                </h4>
+                <p class="w-60 text-paraClr">
+                  Elevate your skills with our Experienced Coach, a seasoned
+                  mentor dedicated to refining your game and unlocking your full
+                  potential.
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+              <div
+                class="radial-progress text-yellow-500"
+                style="--value: 90; --size: 10rem; --thickness: 0.8rem"
+                role="progressbar">
+                <p class="text-headClr text-2xl font-extrabold">90%</p>
+              </div>
+              <div class="mt-4 text-center space-y-3">
+                <h4 class="text-xl font-semibold text-headClr">
+                  Senior Player
+                </h4>
+                <p class="w-60 text-paraClr">
+                  Meet the Senior Player, a seasoned athlete whose wealth of
+                  experience brings leadership, skill, and a winning spirit to
+                  the team.
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+              <div
+                class="radial-progress text-blue-500"
+                style="--value: 80; --size: 10rem; --thickness: 0.8rem"
+                role="progressbar">
+                <p class="text-headClr text-2xl font-extrabold">80%</p>
+              </div>
+              <div class="mt-4 text-center space-y-3">
+                <h4 class="text-xl font-semibold text-headClr">
+                  Training Ground
+                </h4>
+                <p class="w-60 text-paraClr">
+                  Master your craft at our state-of-the-art Training Ground,
+                  where dedication meets innovation, shaping athletes into
+                  champions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <footer class="container mx-auto">
       <div class="px-[20px] lg:px-[135px]"></div>
     </footer>
 
-    <!-- Flowbite -->
+    <!-- FlowbiteUI -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+    <!-- Tailwind js  -->
+    <script src="./tailwind.config.js"></script>
   </body>
 </html>
