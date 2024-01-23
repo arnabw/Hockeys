@@ -8,17 +8,37 @@
     <!-- Flowbite  -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
     <!-- Tailwind CSS  -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome -->
     <script
       src="https://kit.fontawesome.com/7959247147.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Vanilla CSS  -->
-    <link rel="stylesheet" href="./assets/styles/main.css" />
+      crossorigin="anonymous"></script>
+    <!-- Embedded CSS  -->
+    <style>
+      /* Font */
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+      /* Applied  */
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+    <!-- Custom Color -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              themeClr: "#00A7E1",
+              headClr: "#333333",
+              paraClr: "#5E6A71",
+              optClr: "#F7F7F7",
+            },
+          },
+        },
+      };
+    </script>
   </head>
 
   <body>
@@ -26,51 +46,47 @@
     <header class="container mx-auto">
       <div class="px-[20px] lg:px-[135px]">
         <!-- Nav Section  -->
-        <nav class="bg-white fixed w-full z-20 top-0 start-0">
+        <nav class="bg-white sticky w-full z-50 top-0 start-0">
           <div
-            class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
-          >
+            class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <button
               data-collapse-toggle="navbar-sticky"
               type="button"
-              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-[#333333] rounded-lg md:hidden hover:bg-[#00A7E1] focus:outline-none focus:ring-2 focus:ring-slate-950"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-headClr rounded-lg md:hidden hover:bg-themeClr focus:outline-none focus:ring-2 focus:ring-slate-950"
               aria-controls="navbar-sticky"
-              aria-expanded="false"
-            >
+              aria-expanded="false">
               <span class="sr-only"></span>
               <i class="text-xl fa-solid fa-bars-staggered"></i>
             </button>
             <a
               href="https://arnabw.github.io/Hockeys/"
-              class="flex items-center space-x-3 rtl:space-x-reverse"
-            >
+              class="flex items-center space-x-3 rtl:space-x-reverse">
               <h1
-                class="text-[22px] lg:text-4xl text-[#333333] font-extrabold whitespace-nowrap"
-              >
-                Hockey<span class="text-[#00A7E1]">’</span>s
+                class="text-[22px] lg:text-4xl text-headClr font-extrabold whitespace-nowrap">
+                Hockey<span class="text-themeClr">’</span>s
               </h1>
             </a>
             <div
-              class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"
-            >
+              class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+              <div class="hidden lg:flex items-center mr-4">
+                <i
+                  class="text-paraClr text-2xl fa-solid fa-magnifying-glass"></i>
+              </div>
               <button
                 type="button"
-                class="text-white bg-[#00A7E1] hover:bg-[#00A7E1] focus:ring-4 focus:outline-none focus:ring-slate-950 font-medium rounded-lg text-sm px-4 lg:px-6 py-2 lg:py-[15px] text-center"
-              >
+                class="text-white bg-themeClr hover:bg-headClr focus:ring-4 focus:outline-none focus:ring-slate-950 font-medium rounded-lg text-sm px-4 lg:px-6 py-2 lg:py-[15px] text-center">
                 Get Ticket
               </button>
             </div>
             <div
               class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
-              id="navbar-sticky"
-            >
+              id="navbar-sticky">
               <ul
-                class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white"
-              >
+                class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
                 <li>
                   <a
                     href="#"
-                    class="block py-2 px-3 text-[#00A7E1] bg-white rounded md:bg-transparent md:text-[#00A7E1] md:p-0 md:dark:text-[#00A7E1]"
+                    class="block py-2 px-3 text-themeClr bg-white rounded md:bg-transparent md:p-0"
                     aria-current="page"
                     >Home</a
                   >
@@ -78,28 +94,28 @@
                 <li>
                   <a
                     href="#"
-                    class="block py-2 px-3 text-[#5E6A71] rounded hover:bg-[#00A7E1] md:hover:bg-transparent md:hover:text-[#00A7E1] md:p-0"
+                    class="block py-2 px-3 text-paraClr rounded hover:bg-themeClr md:hover:bg-transparent md:p-0 md:hover:text-themeClr"
                     >About</a
                   >
                 </li>
                 <li>
                   <a
                     href="#"
-                    class="block py-2 px-3 text-[#5E6A71] rounded hover:bg-[#00A7E1] md:hover:bg-transparent md:hover:text-[#00A7E1] md:p-0"
+                    class="block py-2 px-3 text-paraClr rounded hover:bg-themeClr md:hover:bg-transparent md:p-0 md:hover:text-themeClr"
                     >Pages</a
                   >
                 </li>
                 <li>
                   <a
                     href="#"
-                    class="block py-2 px-3 text-[#5E6A71] rounded hover:bg-[#00A7E1] md:hover:bg-transparent md:hover:text-[#00A7E1] md:p-0"
+                    class="block py-2 px-3 text-paraClr rounded hover:bg-themeClr md:hover:bg-transparent md:p-0 md:hover:text-themeClr"
                     >Blog</a
                   >
                 </li>
                 <li>
                   <a
                     href="#"
-                    class="block py-2 px-3 text-[#5E6A71] rounded hover:bg-[#00A7E1] md:hover:bg-transparent md:hover:text-[#00A7E1] md:p-0"
+                    class="block py-2 px-3 text-paraClr rounded hover:bg-themeClr md:hover:bg-transparent md:p-0 md:hover:text-themeClr"
                     >Contact</a
                   >
                 </li>
@@ -109,6 +125,137 @@
         </nav>
 
         <!-- Banner Section  -->
+        <div>
+          <div
+            id="default-carousel"
+            class="relative w-full z-10"
+            data-carousel="static">
+            <!-- Carousel wrapper -->
+            <div
+              class="relative h-[200px] overflow-hidden rounded-xl md:h-96 lg:h-[550px]">
+              <!-- Item 1 -->
+              <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+                <img
+                  src="./assets/images/1.png"
+                  class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                  alt="..." />
+                <!-- Highlighted Div  -->
+                <div
+                  class="hidden lg:flex flex-col bg-headClr space-y-3 p-5 rounded-xl absolute bottom-8 right-8 w-[566px] z-40">
+                  <h2 class="text-lg lg:text-2xl text-optClr font-bold">
+                    Meet all the heroes from the field
+                  </h2>
+                  <p class="text-sm lg:text-base text-paraClr font-medium">
+                    Discover the unsung heroes of the field – players and
+                    coaches whose dedication and passion exemplify the true
+                    spirit of the game.
+                  </p>
+                </div>
+              </div>
+              <!-- Item 2 -->
+              <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+                <img
+                  src="./assets/images/2banner.jpg"
+                  class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                  alt="..." />
+                <!-- Highlighted Div  -->
+                <div
+                  class="hidden lg:flex flex-col bg-paraClr space-y-3 p-5 rounded-xl absolute bottom-8 right-8 w-[566px] z-40">
+                  <h2 class="text-lg lg:text-2xl text-optClr font-bold">
+                    Unveiling Field Legends
+                  </h2>
+                  <p class="text-sm lg:text-base text-headClr font-medium">
+                    Uncover the stories of exceptional players and coaches, true legends whose unwavering dedication defines the essence of the game.
+                  </p>
+                </div>
+              </div>
+              <!-- Item 3 -->
+              <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+                <img
+                  src="./assets/images/3banner.jpg.jpg"
+                  class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                  alt="..." />
+                <!-- Highlighted Div  -->
+                <div
+                  class="hidden lg:flex flex-col bg-headClr space-y-3 p-5 rounded-xl absolute bottom-8 right-8 w-[566px] z-40">
+                  <h2 class="text-lg lg:text-2xl text-optClr font-medium">
+                    Champions Behind the Scenes
+                  </h2>
+                  <p class="text-sm lg:text-base text-paraClr font-bold">
+                    Dive into the narratives of those often overlooked – the players and coaches whose relentless passion shapes the soul of the sport.
+                  </p>
+                </div>
+              </div>
+              <!-- Item 4 -->
+              <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+                <img
+                  src="./assets/images/4banner.jpg.jpg"
+                  class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                  alt="..." />
+                <!-- Highlighted Div  -->
+                <div
+                  class="hidden lg:flex flex-col bg-paraClr space-y-3 p-5 rounded-xl absolute bottom-8 right-8 w-[566px] z-40">
+                  <h2 class="text-lg lg:text-2xl text-optClr font-medium">
+                    Field Icons: Stories Untold
+                  </h2>
+                  <p class="text-sm lg:text-base text-headClr font-bold">
+                    Delve into the untold stories of players and coaches who stand as icons, channeling their passion to elevate the spirit of the game.
+                  </p>
+                </div>
+              </div>
+              <!-- Item 5 -->
+              <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+                <img
+                  src="./assets/images/5banner.jpg.jpg"
+                  class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                  alt="..." />
+                <!-- Highlighted Div  -->
+                <div
+                  class="hidden lg:flex flex-col bg-optClr space-y-3 p-5 rounded-xl absolute bottom-8 right-8 w-[566px] z-40">
+                  <h2 class="text-lg lg:text-2xl text-themeClr font-medium">
+                    Beyond the Scoreboard: Meet the Game-Changers
+                  </h2>
+                  <p class="text-sm lg:text-base text-headClr font-bold">
+                    Explore the journeys of game-changers on and off the field, discovering the players and coaches whose impact transcends mere statistics.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Slider controls -->
+            <button
+              type="button"
+              class="absolute bottom-10 left-1/3 lg:bottom-10 lg:left-2 z-30 px-4 cursor-pointer group focus:outline-none"
+              data-carousel-prev>
+              <span
+                class="inline-flex items-center justify-center w-6 lg:w-10 h-6 lg:h-10 rounded-full bg-headClr group-focus:ring-4 group-focus:ring-slate-950 group-focus:outline-none">
+                <i class="text-white fa-solid fa-chevron-left"></i>
+                <span class="sr-only">Previous</span>
+              </span>
+            </button>
+            <button
+              type="button"
+              class="absolute bottom-10 left-1/2 lg:bottom-10 lg:left-20 z-30 px-4 cursor-pointer group focus:outline-none"
+              data-carousel-next>
+              <span
+                class="inline-flex items-center justify-center w-6 lg:w-10 h-6 lg:h-10 rounded-full bg-headClr group-focus:ring-4 group-focus:ring-slate-950 group-focus:outline-none">
+                <i class="text-white fa-solid fa-chevron-right"></i>
+                <span class="sr-only">Next</span>
+              </span>
+            </button>
+          </div>
+          <!-- Highlighted Div  -->
+          <div
+            class="bg-headClr lg:hidden space-y-1 p-3  rounded-xl">
+            <h2 class="text-lg lg:text-2xl text-optClr font-bold">
+              Meet all the heroes from the field
+            </h2>
+            <p class="text-sm lg:text-base text-paraClr font-medium">
+              Discover the unsung heroes of the field – players and coaches
+              whose dedication and passion exemplify the true spirit of the
+              game.
+            </p>
+          </div>
+        </div>
       </div>
     </header>
 

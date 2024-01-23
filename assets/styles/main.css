@@ -1,9 +1,0 @@
-/* Font */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
-
-/* Applied  */
-body{
-    font-family: 'Poppins', sans-serif;
-}
-
-/* <button type="button" class="text-white bg-[#00A7E1] hover:bg-[#00A7E1] focus:ring-4 focus:outline-none focus:ring-slate-950 font-medium rounded-lg text-sm px-4 py-2 text-center">Get Ticket</button>  */
